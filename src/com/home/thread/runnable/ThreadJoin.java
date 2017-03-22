@@ -6,8 +6,8 @@ public class ThreadJoin {
 		MyThread t = new MyThread();
 		t.start();
 		try {
-			t.join();
-			//t.join(5000);
+			//t.join();
+			t.join(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
